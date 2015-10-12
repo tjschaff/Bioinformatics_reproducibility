@@ -6,7 +6,19 @@ output: html_document
 ---
 Here I'm working with the data carpentry ecoli genomes data set. I found it at this website: http://tracykteal.github.io/R-genomics/02-starting-with-data.html
 
-
 ```{r set seed, echo=TRUE, eval=TRUE}
 set.seed(65870179)
+```
+
+Below I am importing the **ecoli** data from our data folder.
+
+```{r Import Data, echo = TRUE, eval = TRUE}
+metadata <- read.csv('data/Ecoli_metadata.csv') #Reading in my data file into an object named metadata
+#View(metadata) #looking at the table within R
+#str()
+#?str #get help on str
+#??str #all help pages with str in it
+str(metadata) # looking at structure of data frame
+mean(metadata$genome_size) # calculating the mean
+
 ```
