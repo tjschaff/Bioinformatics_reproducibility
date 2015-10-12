@@ -1,0 +1,12 @@
+---
+title: "Ecoli Genome Analysis"
+author: "Trevor Schaff"
+date: "October 12, 2015"
+output: html_document
+---
+Here I'm working with the data carpentry ecoli genomes data set. I found it at this website: http://tracykteal.github.io/R-genomics/02-starting-with-data.html
+
+
+```{r set seed, echo=TRUE, eval=TRUE}
+set.seed(65870179)
+```
