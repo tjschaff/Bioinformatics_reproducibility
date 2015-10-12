@@ -22,3 +22,21 @@ str(metadata) # looking at structure of data frame
 mean(metadata$genome_size) # calculating the mean
 
 ```
+
+```{r load packages, eval=TRUE}
+#install.packages("ggplot2")
+library(ggplot2)
+```
+
+```{r data exploration, echo = TRUE, eval = TRUE, fig.center = TRUE}
+ggplot(metadata, aes(x = genome_size)) + geom_bar(stat = "bin", binwidth=0.01) #creates bar graph
+
+```
+
+Always include session info for reproducible documents!
+```{r session info}
+#install.packages("devtools")
+#library(devtools)
+devtools::session_info()
+
+```
